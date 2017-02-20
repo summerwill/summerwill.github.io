@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Beer Cafe</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /* 桌上型電腦螢幕 螢幕限制 大於等於 992px */
+
+@media screen and (min-width:992px) {
+    * {
+        list-style-type:none;
+        text-decoration:none;
+        box-sizing: border-box;
+    }
+    body {
+        background-color: #FCF7E7;
+    }
+    h1 {
+        color: #150902;
+    }
+    .header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100px;
+    }
+    .site-name {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+    .header-body {
+        flex: 3 1 auto;
+    }
+    .menu-list {
+        display: flex;
+        justify-content: space-around;
+    }
+    .item {
+        font-family: verdana;
+        font-size: 22px;
+
+    }
+    
+    .carousel-inner img {
+        width: 1300px;
+    }
+    .container {
+        width: 100%;
+        height: auto;
+       
+    }
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+       
+    }
+    .row-entryA {
+        display: inline-block;
+        width: 1200px;
+    }
+    .entry-left {
+        display: inline-block;
+        width: 523px;
+    }
+    .entry-picA {
+        display: inline-block;
+    }
+    .entry-desA {
+        display: inline-block;
+        width: 150px;
+    }
+    .entry-right {
+        display: inline-block;
+        width: 564px;
+        
+    }
+    .button{
+        background-color: black;
+        color: white;
+    }
+    .entry-picB {
+        display: inline-block;
+        position: relative;
+        width: 530px;
+    }
+    .entry-desB {
+        display: inline-block;
+        position: absolute;
+        width: 140px;
+        right: 200px;
+        top: 726px;
+    }
+    .roWContent {
+        display: inline-block;
+        width: 1142px;
+    }
+    .drink-menu {
+        display: inline-block;
+    }
+    .drink-menu-pic img {
+        width: 540px;
+        height: 300px;
+        position: relative;
+    }
+    .drink-menu-bth {
+        position: absolute;
+        border: 3px solid white;
+        width: 135px;
+        height: 70px;
+        top: 1140px;
+        left: 275px;
+    }
+    .drink-menu-des {
+        font-size: 15px;
+        color: aliceblue;
+        position: absolute;
+        top: 1260px;
+        margin-left: 15px;
+    }
+    .food-menu {
+        display: inline-block;
+    }
+    .food-menu-pic img {
+        width: 525px;
+        height: 300px;
+        position: relative;
+    }
+    .food-menu-bth {
+        position: absolute;
+        border: 3px solid white;
+        width: 135px;
+        height: 70px;
+        top: 1145px;
+        right: 285px;
+    }
+    .food-menu-des {
+        font-size: 15px;
+        color: aliceblue;
+        position: absolute;
+        top: 1260px;
+        margin-left: 25px;
+    }
+    .row-contnet {
+        width: 1150px;
+        height: 250px;
+        display: inline-block;
+    }
+    .content-row {
+        width: 287px;
+        float: left;
+    }
+    .content-rowA {
+        width: 287px;
+        float: left;
+    }
+    .content-rowB {
+        width: 287px;
+        float: left;
+    }
+    .content-rowC {
+        width: 287px;
+        float: left;
+    }
+    .new-content {
+        display: inline-block;
+        width: 1120px;
+        font-size: 15px;
+        clear: both;
+    }
+    .dou-banner {
+        width: 1153px;
+        display: inline-block;
+    }
+    .menu-bannerA {
+        display: inline-block;
+        width: 518px;
+        float: left;
+    }
+    .col-med-6 bannerA {
+        width: 50%;
+    }
+    .menu-bannerB {
+        display: inline-block;
+        width: 598px;
+        float: left;
+    }
+    .col-med-12 footer {
+        width: 100%;
+    }
+    .footer-all {
+      
+        display: inline-block;
+        width: 1139px;
+        height: 184px;
+        background-color: #2E2E2E;
+        clear: both;
+    }
+    .footer-left {
+        display: inline-block;
+        width: 400px;
+    }
+    .footer-nav {
+        display: inline-block;
+        width: 250px;
+    }
+   
+    .footer-med {
+        display: inline-block;
+        width: 250px;
+    }
+    .footer-right {
+        display: inline-block;
+        width: 400px;
+    }
+    .SNS-right {
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+        margin: 10px;
+    }
+    .SNS_item {
+        float: left;
+        margin: 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+/* 桌上型平板與小螢幕 螢幕限制 大於等於 768px 小於等於 991px*/
+
+@media screen and ( min-width:768px)and( max-width:991px) {
+  
+}
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="site-name">
+                <h1><a href="" style="color:#071418;">Beer Cafe</a></h1>
+            </div>
+            <nav class="header-body">
+                <ul class="menu-list">
+                    <li class="item"><a href="#" style="color:#071418;">Menu</a></li>
+                    <li class="item"><a href="#" style="color:#071418;">Products</a></li>
+                    <li class="item"><a href="#" style="color:#071418;">Activity</a></li>
+                    <li class="item"><a href="#" style="color:#071418;">Location</a></li>
+                    <li class="item"><a href="#" style="color:#071418;">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container-fluid">
+            <div id="slideshow" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active"><img src="images/slide1.jpg" alt="beer cafe">
+
+                    </div>
+                    <div class="item"><img src="images/slide2.jpg" alt="beer cafe">
+
+                    </div>
+                    <div class="item"><img src="images/slide3.jpg" alt="beer cafe">
+
+                    </div>
+
+                </div>
+                <div class="control-btn">
+                    <a href="#slideshow" class="left carousel-control" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+                    <a href="#slideshow" class="right carousel-control" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#slideshow" data-slide-to=0></li>
+                    <li data-target="#slideshow" data-slide-to=1></li>
+                    <li data-target="#slideshow" data-slide-to=2></li>
+                </ol>
+            </div>
+
+        </div>
+        <div class="row-entryA">
+            <div class="col-med-12">
+                <div class="entry-left">
+                    <div class="col-med-6">
+                        <div class="entry-picA">
+                            <div class="col-med-3">
+                                <img src="images/entry1.jpg" alt="咖啡禮品" width="275px" height="250px">
+                            </div>
+
+                        </div>
+                        <div class="entry-desA">
+                            <div class="col-med-3">
+                                <h3>咖啡禮品</h3>
+                                <span>新春好禮大放送,大吉大利,溫暖販賣中</span>
+                                <span><a href="" class="button">READ MORE</a></span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="entry-right">
+                    <div class="col-med-6">
+                        <div class="entry-picB">
+                            <div class="col-med-3">
+                                <img src="images/entry2.jpg" alt="咖啡禮品" width="275px" height="250px">
+                            </div>
+
+                        </div>
+                        <div class="entry-desB">
+                            <div class="col-med-3">
+                                <h3>人氣甜點</h3>
+                                <span>純天然食材製作,美味又安心</span>
+                                <span><a href="" class="button">READ MORE</a></span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="roWContent">
+            <hr>
+            <h2>Content</h2>
+
+            <div class="drink-menu">
+                <div class="col-med-6">
+
+                    <div class="drink-menu-pic"> <img src="images/menu_drink.jpg" alt="飲料菜單">
+                    </div>
+                    <div class="drink-menu-bth">
+                        <a href="#" class="">
+                            <h3 style="color:#F2F2F2;">Drink Menu</h3>
+                        </a>
+                    </div>
+                    <div class="drink-menu-des"><span>
+                          招牌菜單是依照季節性的不同所製作成的,希望製作出適合每位顧客都喜歡 。
+                     </span></div>
+
+
+
+
+                </div>
+            </div>
+            <div class="food-menu">
+                <div class="col-med-6">
+                    <div class="food-menu-pic">
+                        <img src="images/menu_food.jpg" alt="食物菜單">
+
+                    </div>
+
+                    <div class="food-menu-bth">
+                        <a href="#" class="">
+                            <h3 style="color:#F2F2F2;">Food Menu</h3>
+                        </a>
+                    </div>
+                    <div class="food-menu-des"><span>
+                        三明治，蛋糕，麵食,與我們店內所自做的咖啡非常搭配。
+                           </span></div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <hr>
+        <div class="row-contnet">
+
+            <div class="content-row">
+                <div class="col-med-3">
+                    <span class="fa fa-pagelines"></span>
+                    <h3 class="">悠閒的空間</h3>
+                    <p class="">
+                        本空間在任何時間來都可放鬆，從午餐到晚餐。椅子和牆壁，以及對細節的我們都注重顧客的感受。
+                    </p>
+                </div>
+
+            </div>
+            <div class="content-rowA">
+                <div class="col-med-3">
+                    <span class="IconPanel_icon fa fa-coffee"></span>
+                    <h3 class="IconPanel_head">精選咖啡豆</h3>
+                    <p class="IconPanel_body">
+                        產地，豆類的類型，介紹咖啡的焙燒法。
+                    </p>
+                </div>
+            </div>
+            <div class="content-rowB">
+                <div class="col-med-3">
+                    <span class="IconPanel_icon fa fa-pencil"></span>
+                    <h3 class="IconPanel_head">咖啡學習</h3>
+                    <p class="IconPanel_body">
+                        從咖啡豆的基本知識，我們會教你的釀造美味的咖啡。
+                    </p>
+                </div>
+            </div>
+            <div class="content-rowC">
+
+                <div class="col-med-3">
+                    <span class="IconPanel_icon fa fa-laptop"></span>
+                    <h3 class="IconPanel_head">BLOG</h3>
+                    <p class="IconPanel_body">
+                        店鋪的最新消息，都可從這取得。
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <section class="col-med-12">
+            <h2>News</h2>
+            <hr>
+            <ol class="new-content">
+                <li>
+                    <time class="NewsList_head" datatime="2017-02-17">2017.02.17</time>
+                    <span class="NewsList_body">新品上市</span>
+                </li>
+
+                <li>
+                    <time class="NewsList_head" datatime="2017-02-14">2017.02.14</time>
+                    <span class="NewsList_body">情人節優惠活動</span>
+                </li>
+                <li>
+                    <time class="NewsList_head" datatime="2017-02-13">2017.02.13</time>
+                    <span class="NewsList_body">朋友日,買一送一</span>
+                </li>
+                <li>
+                    <time class="NewsList_head" datatime="2017-02-07">2017.02.07</time>
+                    <span class="NewsList_body">Beer Cafe台大店開幕</span>
+                </li>
+            </ol>
+        </section>
+        <div class="dou-banner">
+
+            <div class="col-med-12">
+                <div class="menu-bannerA">
+                    <div class="col-med-6 bannerA">
+                        <a href="#">
+                            <img src="images/top_banner_1.jpg" class="l-fitImg" alt="Dummy banner">
+                        </a>
+
+                    </div>
+                </div>
+                <div class="menu-bannerB">
+                    <div class="col-med-6 bannerB">
+                        <a href="#">
+                            <img src="images/top_banner_2.jpg" class="l-fitImg" alt="Dummy banner">
+                        </a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+        <footer class="col-med-12 footer">
+            <div class="footer-all">
+                <div class="footer-left">
+                    <div class="col-med-4">
+                        <div class="footer-nav">
+                            <a href="#" class="logo" style="color:#F2F2F2;">Beer Cafe</a>
+                            <ul>
+                                <li><a href="#" style="color:#F2F2F2;">Menu</a></li>
+                                <li><a href="#" style="color:#F2F2F2;">Products</a></li>
+                                <li><a href="#" style="color:#F2F2F2;">Activity</a></li>
+                                <li><a href="#" style="color:#F2F2F2;">Location</a></li>
+                                <li><a href="#" style="color:#F2F2F2;">Contact</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer-med">
+                    <div class="col-med-4">
+                        <span style="color:#F2F2F2;">營業時間:AM:6:30~PM:8:30</span>
+                        <p style="color:#F2F2F2;">Copyright information goes down here.</p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                  <div class="col-med-4">
+                    <ul class="SNS-right">
+                        <li class="SNS_item">
+                            <a class="fa fa-youtube-square" href="#" style="color:#F2F2F2;"></a>
+                        </li>
+                        <li class="SNS_item">
+                            <a class="fa fa-facebook-official" href="#" style="color:#F2F2F2;"></a>
+                        </li>
+                        <li class="SNS_item">
+                            <a class="fa fa-instagram" href="#" style="color:#F2F2F2;"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </footer>
+    </div>
+
+</body>
+
+</html>
