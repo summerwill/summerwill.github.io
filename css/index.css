@@ -1,0 +1,426 @@
+ /* 桌上型電腦螢幕 螢幕限制 大於等於 992px */
+        
+        @media screen and (min-width:992px) {
+            * {
+                list-style-type: none;
+                box-sizing: border-box;
+            }
+            body {
+                background-color: #FCF7E7;
+            }
+            h1 {
+                color: #150902;
+            }
+            .header {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                height: 100px;
+            }
+            .site-name {
+                flex: 1 1 auto;
+                text-align: center;
+            }
+            .header-body {
+                flex: 3 1 auto;
+            }
+            .menu-list {
+                display: flex;
+                justify-content: space-around;
+            }
+            .item {
+                font-family: verdana;
+                font-size: 22px;
+            }
+            .carousel-inner img {
+                width: 1300px;
+            }
+            .container {
+                height: auto;
+            }
+            [class*="col-"] {
+                float: left;
+                padding: 15px;
+            }
+            .col-med-12 AA {
+                width: calc(100% *12/12)
+            }
+            .row-entryA {
+                display: inline-block;
+                text-align: center;
+            }
+            .entry-left {
+                display: inline-block;
+            }
+            .entry-picA {
+                display: inline-block;
+                width: 275px;
+                height: 250px;
+            }
+            .entry-desA {
+                display: inline-block;
+                width: 170px;
+            }
+            .entry-right {
+                display: inline-block;
+            }
+            .button {
+                background-color: black;
+                color: white;
+            }
+            .entry-picB {
+                display: inline-block;
+                width: 275px;
+                height: 250px;
+            }
+            .entry-desB {
+                display: inline-block;
+                width: 139px;
+            }
+            .roWContent {
+                display: inline-block;
+            }
+            .drink-menu {
+                display: inline-block;
+            }
+            .drink-menu-pic img {
+                width: 540px;
+                height: 300px;
+            }
+            .drink-menu-bth {
+                position: absolute;
+                border: 3px solid white;
+                width: 135px;
+                height: 70px;
+                margin-top: -180px;
+                margin-left: 183px;
+            }
+            .drink-menu-des {
+                font-size: 15px;
+                color: aliceblue;
+                position: absolute;
+                margin-top: -73px;
+                margin-left: 15px;
+            }
+            .food-menu {
+                display: inline-block;
+            }
+            .food-menu-pic img {
+                width: 525px;
+                height: 300px;
+                position: relative;
+            }
+            .food-menu-bth {
+                position: absolute;
+                border: 3px solid white;
+                height: 70px;
+                margin-top: -180px;
+                margin-left:192px;
+            }
+            .food-menu-des {
+                font-size: 15px;
+                color: aliceblue;
+                position: absolute;
+                margin-top: -74px;
+                margin-left: 85px;
+            }
+            .row-contnet {
+                width: 1150px;
+                height: 250px;
+                display: inline-block;
+            }
+            .content-row {
+                width: 287px;
+                float: left;
+            }
+            .content-rowA {
+                width: 287px;
+                float: left;
+            }
+            .content-rowB {
+                width: 287px;
+                float: left;
+            }
+            .content-rowC {
+                width: 287px;
+                float: left;
+            }
+            .new-content {
+                display: inline-block;
+                width: 1120px;
+                font-size: 18px;
+                clear: both;
+            }
+            .dou-banner {
+                width: 1150px;
+                display: inline-block;
+            }
+            .menu-bannerA {
+                display: inline-block;
+                width: 518px;
+                float: left;
+            }
+            .col-med-6 bannerA {
+                width: 50%;
+            }
+            .menu-bannerB {
+                display: inline-block;
+                width: 598px;
+                float: left;
+            }
+            .col-med-12 footer {
+                width: 100%;
+            }
+            .footer-all {
+                display: inline-block;
+                position: relative;
+                margin-bottom: -15px;
+                width: 1139px;
+                height: 184px;
+                background-color: #2E2E2E;
+                clear: both;
+            }
+            .footer-left {
+                display: inline-block;
+                width: 400px;
+            }
+            .footer-nav {
+                display: inline-block;
+                width: 250px;
+            }
+            .footer-med {
+                display: inline-block;
+                width: 250px;
+            }
+            .footer-right {
+                display: inline-block;
+                width: 400px;
+            }
+            .SNS-right {
+                display: inline-block;
+                width: 200px;
+                height: 50px;
+                margin: 10px;
+                font-size:20px;
+            }
+            .SNS_item {
+                float: left;
+                margin: 5px;
+                width: 20px;
+                height: 20px;
+            }
+        }
+        /* 桌上型平板與小螢幕 螢幕限制 大於等於 768px 小於等於 991px*/
+        
+        @media screen and ( min-width:768px)and( max-width:991px) {
+            * {
+                list-style-type: none;
+                box-sizing: border-box;
+            }
+            body {
+                background-color: #FCF7E7;
+            }
+            h1 {
+                color: #150902;
+            }
+            .header {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                height: 100px;
+            }
+            .site-name {
+                flex: 1 1 auto;
+                text-align: center;
+            }
+            .header-body {
+                flex: 3 1 auto;
+            }
+            .menu-list {
+                display: flex;
+                justify-content: space-around;
+            }
+            .item {
+                font-family: verdana;
+                font-size: 22px;
+            }
+            .carousel-inner img {
+                width: 1300px;
+            }
+            .container {
+                height: auto;
+            }
+            [class*="col-"] {
+                float: left;
+                padding: 15px;
+            }
+            .col-med-12 AA {
+                width: calc(100% *12/12)
+            }
+            .row-entryA {
+                display: inline-block;
+                text-align: center;
+            }
+            .entry-left {
+                display: inline-block;
+            }
+            .entry-picA {
+                display: inline-block;
+                width: 275px;
+                height: 250px;
+                max-width: 20%;
+                max-height: 20%;
+            }
+            .entry-desA {
+                display: inline-block;
+                width: 170px;
+            }
+            .entry-right {
+                display: inline-block;
+            }
+            .button {
+                background-color: black;
+                color: white;
+            }
+            .entry-picB {
+                display: inline-block;
+                width: 275px;
+                height: 250px;
+            }
+            .entry-desB {
+                display: inline-block;
+                width: 139px;
+            }
+            .roWContent {
+                display: inline-block;
+            }
+            .drink-menu {
+                display: inline-block;
+            }
+            .drink-menu-pic img {
+                width: 540px;
+                height: 300px;
+            }
+            .drink-menu-bth {
+                position: absolute;
+                border: 3px solid white;
+                width: 135px;
+                height: 70px;
+                margin-top: -180px;
+                margin-left: 183px;
+            }
+            .drink-menu-des {
+                font-size: 15px;
+                color: aliceblue;
+                position: absolute;
+                margin-top: -73px;
+                margin-left: 15px;
+            }
+            .food-menu {
+                display: inline-block;
+            }
+            .food-menu-pic img {
+                width: 525px;
+                height: 300px;
+                position: relative;
+            }
+            .food-menu-bth {
+                position: absolute;
+                border: 3px solid white;
+                width: 135px;
+                height: 70px;
+                margin-top: -180px;
+                right: 300px;
+            }
+            .food-menu-des {
+                font-size: 15px;
+                color: aliceblue;
+                position: absolute;
+                margin-top: -74px;
+                margin-left: 85px;
+            }
+            .row-contnet {
+                width: 1150px;
+                height: 250px;
+                display: inline-block;
+            }
+            .content-row {
+                width: 287px;
+                float: left;
+            }
+            .content-rowA {
+                width: 287px;
+                float: left;
+            }
+            .content-rowB {
+                width: 287px;
+                float: left;
+            }
+            .content-rowC {
+                width: 287px;
+                float: left;
+            }
+            .new-content {
+                display: inline-block;
+                width: 1120px;
+                font-size: 18px;
+                clear: both;
+            }
+            .dou-banner {
+                width: 1150px;
+                display: inline-block;
+            }
+            .menu-bannerA {
+                display: inline-block;
+                width: 518px;
+                float: left;
+            }
+            .col-med-6 bannerA {
+                width: 50%;
+            }
+            .menu-bannerB {
+                display: inline-block;
+                width: 598px;
+                float: left;
+            }
+            .col-med-12 footer {
+                width: 100%;
+            }
+            .footer-all {
+                display: inline-block;
+                position: relative;
+                margin-bottom: -15px;
+                width: 1139px;
+                height: 184px;
+                background-color: #2E2E2E;
+                clear: both;
+            }
+            .footer-left {
+                display: inline-block;
+                width: 400px;
+            }
+            .footer-nav {
+                display: inline-block;
+                width: 250px;
+            }
+            .footer-med {
+                display: inline-block;
+                width: 250px;
+            }
+            .footer-right {
+                display: inline-block;
+                width: 400px;
+            }
+            .SNS-right {
+                display: inline-block;
+                width: 200px;
+                height: 50px;
+                margin: 10px;
+            }
+            .SNS_item {
+                float: left;
+                margin: 5px;
+                width: 20px;
+                height: 20px;
+            }
+        }
